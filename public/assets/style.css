@@ -4,156 +4,105 @@
 }
 
 body {
-  background-color: #2e2e2e;
-  color: #8C52FF;
+  background-color: #1a1a1a;
+  color: #ffffff;
   height: 100vh;
   width: 100vw;
   font-family: 'IBM Plex Sans', sans-serif;
-  background-image: url('https://wallpapers.com/images/featured/cool-blue-galaxy-ghkvl8txdut36xgd.jpg');
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
   overflow: hidden;
 }
 
+/* Navbar styles */
+.navbar {
+  overflow: hidden;
+  background-color: #111111;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.navbar a:hover {
+  background: #ffffff;
+  color: #000000;
+  transition: background-color 200ms, color 200ms;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Container and search bar styles */
 .container {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 18px;
-  backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.5);
   padding: 20px;
-  border-radius: 20px;
 }
 
 .header {
-  font-size: 42px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: #8C52FF;
-}
-
-.icon {
-  height: 42px;
-  width: 42px;
+  font-size: 64px;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .description {
-  font-size: 16px;
-  color: #8C52FF;
+  font-size: 14px;
+  color: #999999;
+  margin-bottom: 30px;
 }
 
 .input {
-  width: 400px;
-  background-color: transparent;
-  border: 1.5px solid rgb(74, 74, 74);
-  font-size: 14px;
-  padding: 12px;
+  width: 500px;
+  background-color: #333333;
+  border: none;
+  font-size: 18px;
+  padding: 15px;
   text-align: center;
-  color: #8C52FF;
+  color: #ffffff;
   outline: none;
-  border-radius: 50px; 
-  transition: color 100ms;
+  border-radius: 10px;
 }
 
 .input::placeholder {
-  color: #757575;
+  color: #999999;
 }
 
-.input:disabled {
-  color: #757575;
-}
-
-.logo {
-  height: 55px;
-  width: 55px;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 24px #685dff);
-}
-
+/* Footer styles */
 .footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-sizing: border-box;
-  flex-shrink: 0;
-  padding: 18px;
-  padding-left: 24px;
-  padding-right: 30px;
-  color: #8C52FF;
+  padding: 10px 20px;
+  background-color: #111111;
+  color: #ffffff;
 }
 
-.footer a,
-.footer a:visited {
-  cursor: pointer;
-  color: #8C52FF;
-  font-size: 16px;
+.footer a {
+  color: #ffffff;
   text-decoration: none;
-  text-underline-offset: 2.5px;
 }
 
 .footer a:hover {
   text-decoration: underline;
-}
-
-.footer div {
-  display: flex;
-  gap: 26px;
-}
-
-.navbar {
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.7);
-  position: fixed; 
-  top: 0; 
-  width: 100%; 
-  backdrop-filter: blur(5px);
-  color: #8C52FF;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #8C52FF;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-}
-
-.button {
-  background-color: rgba(0, 0, 0, 0.7);
-  border: none;
-  color: #8C52FF;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 200px;
-  transition: background-color 300ms, color 300ms;
-}
-
-.button:hover {
-  background-color: #ffffff;
-  color: black;
 }
