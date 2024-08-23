@@ -1,105 +1,116 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
-  background: url('https://github.com/alexbell-lol/Galaxy/blob/main/full-main.png?raw=true') no-repeat center center fixed;
+  background-color: #1a1a1a;
+  background-image: url('https://github.com/alexbell-lol/Galaxy/blob/main/full-main.png?raw=true');
   background-size: cover;
-  font-family: 'IBM Plex Sans', sans-serif;
-  color: white;
+  background-position: center;
+  color: #ffffff;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  width: 100vw;
+  font-family: 'IBM Plex Sans', sans-serif;
   overflow: hidden;
 }
 
+/* Navbar styles */
 .navbar {
-  width: 100%;
-  padding: 15px 0;
-  position: fixed;
-  top: 0;
-  background-color: rgba(20, 20, 20, 0.8); /* Semi-transparent to show background */
+  overflow: hidden;
+  background-color: #111111;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 10;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+  padding: 15px 30px; /* Adjusted padding for better alignment */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adding a subtle shadow for depth */
 }
 
-.navbar .logo {
-  color: white;
-  font-size: 24px;
-  margin-left: 20px;
-  font-weight: bold;
-}
-
-.navbar .menu {
-  margin-right: 20px;
-}
-
-.navbar .menu a {
-  color: white;
-  text-decoration: none;
-  margin: 0 15px;
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.navbar .menu a:hover {
-  color: #8C52FF;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+.navbar a {
+  color: #ffffff;
   text-align: center;
-  gap: 20px;
-  padding-top: 100px; /* Offset for the fixed navbar */
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar a:hover {
+  background: #333333;
+  color: #ffffff;
+  transition: background-color 200ms, color 200ms;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding-right: 20px; /* Adjust for spacing between logo and menu */
+}
+
+/* Container and search bar styles */
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 20px;
 }
 
 .header {
-  font-size: 56px;
+  font-size: 64px;
   font-weight: bold;
+  color: #ffffff;
   margin-bottom: 10px;
 }
 
-.subheader {
-  font-size: 16px;
-  color: #8C52FF;
+.description {
+  font-size: 14px;
+  color: #999999;
   margin-bottom: 30px;
 }
 
-.search-bar {
+.input {
   width: 500px;
-  padding: 15px;
-  font-size: 16px;
-  border-radius: 30px;
+  background-color: #333333;
   border: none;
-  background-color: #333;
-  color: white;
+  font-size: 18px;
+  padding: 15px;
   text-align: center;
-}
-
-.search-bar::placeholder {
-  color: #888;
-}
-
-.search-bar:focus {
+  color: #ffffff;
   outline: none;
-  background-color: #444;
+  border-radius: 10px;
 }
 
-.background-wave {
+.input::placeholder {
+  color: #999999;
+}
+
+/* Footer styles */
+.footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 300px;
-  background: linear-gradient(to bottom, transparent 0%, #1C1C1C 80%);
-  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #111111;
+  color: #ffffff;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }
