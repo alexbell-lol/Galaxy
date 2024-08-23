@@ -1,196 +1,159 @@
-.center {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.title {
-   font-size: 10vh;
-   color: var(--text-primary);
-   font-family: "Inter", sans-serif;
-   text-align: center;
-   text-transform: uppercase;
-   border-radius: 0px 0px 5px 5px;
-   margin-top: 30vh;
-   margin-bottom: 5vh;
-   transition: 0.35s ease;
-   text-shadow: 2px 4px 6px rgb(0, 0, 0, 0.2);
+body {
+  background-color: #2e2e2e;
+  color: #8C52FF;
+  height: 100vh;
+  width: 100vw;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-image: url('https://wallpapers.com/images/featured/cool-blue-galaxy-ghkvl8txdut36xgd.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
-.title:hover {
-   transform: translateY(-5%) scale(1.03);
-   font-weight: 800;
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 20px;
 }
 
-@media (orientation: portrait) {
-   .title {
-      position: relative;
-      top: -10vw;
-      font-size: 10vw;
-      color: var(--text-primary);
-      font-family: "Inter", sans-serif;
-      text-align: center;
-      text-transform: uppercase;
-      border-radius: 0px 0px 5px 5px;
-   }
+.header {
+  font-size: 42px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #8C52FF;
 }
 
-.search-container {
-   display: flex;
-   width: 100%;
-   text-align: center;
-   justify-content: center;
-   align-items: center;
+.icon {
+  height: 42px;
+  width: 42px;
 }
 
-.main-search {
-   width: 50vw;
-   height: 5vh;
-   font-family: "Poppins", sans-serif;
-   font-size: 16px;
-   box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.2);
-   background: var(--background-input);
-   -webkit-backdrop-filter: var(--backdrop-filter);
-   backdrop-filter: var(--backdrop-filter);
+.description {
+  font-size: 16px;
+  color: #8C52FF;
 }
 
-input {
-   padding: 20px;
-   width: 550px;
-   border-radius: 5px;
-   background: var(--background-column);
-   text-align: center;
-   font-size: 24px;
-   border: none;
-   outline: none;
-   color: var(--text-primary);
-   transition: 0.4s;
+.input {
+  width: 400px;
+  background-color: transparent;
+  border: 1.5px solid rgb(74, 74, 74);
+  font-size: 14px;
+  padding: 12px;
+  text-align: center;
+  color: #8C52FF;
+  outline: none;
+  border-radius: 50px; 
+  transition: color 100ms;
 }
 
-#particles-js {
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   top: 0vw;
-   background-color: var(--bg-c);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: 50% 50%;
-   overflow: hidden;
+.input::placeholder {
+  color: #757575;
 }
 
-.particles-js-canvas-el {
-   z-index: 0;
-   top: 0;
-   left: 0;
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   pointer-events: none;
+.input:disabled {
+  color: #757575;
 }
 
-#splash {
-   color: var(--text-dark);
-   margin-bottom: 1em;
-   margin-top: -2em;
-   padding: 0;
-   font-family: "Poppins", sans-serif;
-}
-.center {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+.logo {
+  height: 55px;
+  width: 55px;
+  will-change: filter;
+  transition: filter 300ms;
 }
 
-.title {
-   font-size: 10vh;
-   color: var(--text-primary);
-   font-family: "Inter", sans-serif;
-   text-align: center;
-   text-transform: uppercase;
-   border-radius: 0px 0px 5px 5px;
-   margin-top: 30vh;
-   margin-bottom: 5vh;
-   transition: 0.35s ease;
-   text-shadow: 2px 4px 6px rgb(0, 0, 0, 0.2);
+.logo:hover {
+  filter: drop-shadow(0 0 24px #685dff);
 }
 
-.title:hover {
-   transform: translateY(-5%) scale(1.03);
-   font-weight: 800;
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  padding: 18px;
+  padding-left: 24px;
+  padding-right: 30px;
+  color: #8C52FF;
 }
 
-@media (orientation: portrait) {
-   .title {
-      position: relative;
-      top: -10vw;
-      font-size: 10vw;
-      color: var(--text-primary);
-      font-family: "Inter", sans-serif;
-      text-align: center;
-      text-transform: uppercase;
-      border-radius: 0px 0px 5px 5px;
-   }
+.footer a,
+.footer a:visited {
+  cursor: pointer;
+  color: #8C52FF;
+  font-size: 16px;
+  text-decoration: none;
+  text-underline-offset: 2.5px;
 }
 
-.search-container {
-   display: flex;
-   width: 100%;
-   text-align: center;
-   justify-content: center;
-   align-items: center;
+.footer a:hover {
+  text-decoration: underline;
 }
 
-.main-search {
-   width: 50vw;
-   height: 5vh;
-   font-family: "Poppins", sans-serif;
-   font-size: 16px;
-   box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.2);
-   background: var(--background-input);
-   -webkit-backdrop-filter: var(--backdrop-filter);
-   backdrop-filter: var(--backdrop-filter);
+.footer div {
+  display: flex;
+  gap: 26px;
 }
 
-input {
-   padding: 20px;
-   width: 550px;
-   border-radius: 5px;
-   background: var(--background-column);
-   text-align: center;
-   font-size: 24px;
-   border: none;
-   outline: none;
-   color: var(--text-primary);
-   transition: 0.4s;
+.navbar {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  backdrop-filter: blur(5px);
+  color: #8C52FF;
 }
 
-#particles-js {
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   top: 0vw;
-   background-color: var(--bg-c);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: 50% 50%;
-   overflow: hidden;
+.navbar a {
+  float: left;
+  display: block;
+  color: #8C52FF;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
-.particles-js-canvas-el {
-   z-index: 0;
-   top: 0;
-   left: 0;
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   pointer-events: none;
+.navbar a:hover {
+  background: #ddd;
+  color: black;
 }
 
-#splash {
-   color: var(--text-dark);
-   margin-bottom: 1em;
-   margin-top: -2em;
-   padding: 0;
-   font-family: "Poppins", sans-serif;
+.button {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: #8C52FF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 200px;
+  transition: background-color 300ms, color 300ms;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: black;
 }
