@@ -23,16 +23,15 @@ body {
   top: 0; 
   width: 100%; 
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start; /* Align items to the start */
   align-items: center;
-  padding: 15px 30px; /* Adjusted padding for better alignment */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Adding a subtle shadow for depth */
+  padding: 10px 20px; /* Less padding for a compact look */
 }
 
 .navbar a {
   color: #ffffff;
   text-align: center;
-  padding: 14px 16px;
+  padding: 0 10px; /* Reduced padding between links */
   text-decoration: none;
   font-size: 16px;
   display: flex;
@@ -51,7 +50,7 @@ body {
   color: #ffffff;
   display: flex;
   align-items: center;
-  padding-right: 20px; /* Adjust for spacing between logo and menu */
+  margin-right: 20px; /* Adjusted for spacing between logo and menu */
 }
 
 /* Container and search bar styles */
