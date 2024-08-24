@@ -1,150 +1,104 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-  background-color: #1a1a1a;
+  background-color: #1a1a1a; /* Background color to match the image */
   color: white;
   height: 100vh;
   width: 100vw;
   font-family: 'IBM Plex Sans', sans-serif;
-  background-image: radial-gradient(circle, #2b2b2b, #1a1a1a);
+  background-image: radial-gradient(circle at top left, #2b2b2b, #1a1a1a);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.navbar {
+  width: 100%;
+  background-color: #000; /* Dark background to match image */
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar a {
+  padding: 10px 20px;
+  margin: 0 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  background-color: #111; /* Slightly lighter black for buttons */
+  border-radius: 10px; /* Rounded corners for navbar items */
+}
+
+.navbar a:hover {
+  background-color: #222; /* Slightly lighter on hover */
 }
 
 .container {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  background-color: #111; /* Darker background for container */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for container */
   text-align: center;
-  backdrop-filter: blur(10px);
-  background-color: rgba(0, 0, 0, 0.7);
-  padding: 20px 40px;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 300px;
 }
 
 .header {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   color: #ffffff;
-  margin-bottom: 20px;
-}
-
-.icon {
-  height: 42px;
-  width: 42px;
+  margin-bottom: 15px;
 }
 
 .description {
   font-size: 14px;
-  color: #ffffff;
+  color: #aaaaaa; /* Lighter grey for description text */
+  margin-bottom: 20px;
 }
 
 .input {
-  width: 300px;
-  background-color: transparent;
-  border: 2px solid #ffffff;
-  font-size: 14px;
+  width: 100%;
   padding: 10px;
+  border: 2px solid #333; /* Border to match input style */
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
   text-align: center;
-  color: #ffffff;
-  outline: none;
-  border-radius: 50px;
-  transition: all 100ms ease-in-out;
+  font-size: 14px;
+  margin-top: 10px;
 }
 
 .input::placeholder {
-  color: #757575;
-}
-
-.input:disabled {
-  color: #757575;
-}
-
-.logo {
-  height: 55px;
-  width: 55px;
-  will-change: filter;
-  transition: filter 300ms;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 24px #685dff);
+  color: #757575; /* Placeholder color */
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  bottom: 20px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-sizing: border-box;
-  padding: 18px;
-  color: #ffffff;
+  text-align: center;
+  color: #aaaaaa; /* Lighter grey for footer */
 }
 
-.footer a,
-.footer a:visited {
-  cursor: pointer;
-  color: #ffffff;
-  font-size: 16px;
+.footer a {
+  color: #757575;
   text-decoration: none;
-  text-underline-offset: 2.5px;
   margin: 0 10px;
 }
 
 .footer a:hover {
+  color: #fff; /* White on hover */
   text-decoration: underline;
-}
-
-.navbar {
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.7);
-  position: fixed; 
-  top: 0; 
-  width: 100%; 
-  backdrop-filter: blur(5px);
-  color: #ffffff;
-  padding: 10px 0;
-}
-
-.navbar a {
-  float: left;
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  transition: all 200ms ease-in-out;
-}
-
-.navbar a:hover {
-  background: #333;
-  color: #ffffff;
-}
-
-.button {
-  background-color: rgba(0, 0, 0, 0.7);
-  border: none;
-  color: #ffffff;
-  padding: 12px 24px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 14px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 20px;
-  transition: all 200ms ease-in-out;
-}
-
-.button:hover {
-  background-color: #ffffff;
-  color: #000000;
 }
