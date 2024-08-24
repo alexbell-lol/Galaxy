@@ -21,31 +21,39 @@ body {
   flex-direction: column;
 }
 
+/* Light-Themed Navbar */
 .navbar {
-  width: 100%;
-  background-color: #000; /* Dark background to match image */
-  padding: 15px 0;
+  width: auto; /* Auto width to make the navbar smaller */
+  background-color: #ffffff; /* Light background color for the navbar */
+  padding: 10px 20px; /* Reduced padding for a smaller navbar */
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 20px; /* Added space from the top */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Centering adjustment */
   display: flex;
   justify-content: center;
+  border-radius: 20px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+  transition: all 0.3s ease-in-out; /* Smooth transition for animations */
 }
 
 .navbar a {
-  padding: 10px 20px;
+  padding: 10px 15px; /* Reduced padding for smaller buttons */
   margin: 0 5px;
   text-decoration: none;
-  color: white;
+  color: #333; /* Dark text for contrast */
   font-size: 16px;
-  background-color: #111; /* Slightly lighter black for buttons */
+  background-color: #f5f5f5; /* Slightly darker light grey for buttons */
   border-radius: 10px; /* Rounded corners for navbar items */
+  transition: background-color 0.3s, transform 0.3s; /* Smooth hover and transform animations */
 }
 
 .navbar a:hover {
-  background-color: #222; /* Slightly lighter on hover */
+  background-color: #e0e0e0; /* Slightly darker grey on hover */
+  transform: scale(1.1); /* Smooth scaling animation on hover */
 }
 
+/* Main Container */
 .container {
   background-color: #111; /* Darker background for container */
   padding: 30px;
