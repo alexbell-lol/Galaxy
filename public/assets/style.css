@@ -5,8 +5,8 @@
 }
 
 body {
-  background-color: #121212; /* Adjusted to a darker background */
-  color: white;
+  background-color: #f5f5f5; /* Light background color */
+  color: #333;
   font-family: 'IBM Plex Sans', sans-serif;
   height: 100vh;
   width: 100vw;
@@ -18,7 +18,7 @@ body {
 
 .navbar {
   width: 100%;
-  background-color: #000;
+  background-color: #ffffff; /* Light navbar background */
   padding: 15px 0;
   position: fixed;
   top: 0;
@@ -26,58 +26,59 @@ body {
   display: flex;
   justify-content: center;
   gap: 10px; /* Add spacing between navbar items */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for navbar */
 }
 
 .navbar a {
   padding: 10px 20px;
   text-decoration: none;
-  color: white;
+  color: #333; /* Dark text color for contrast */
   font-size: 16px;
-  background-color: #111;
+  background-color: #eaeaea; /* Light button background */
   border-radius: 10px;
   transition: background-color 0.3s;
 }
 
 .navbar a:hover {
-  background-color: #222;
+  background-color: #d8d8d8; /* Slightly darker hover effect */
 }
 
 .container {
-  background-color: #1c1c1c; /* Darker container background to match the new image */
+  background-color: #ffffff; /* White container background */
   padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Light shadow */
   text-align: center;
-  max-width: 350px; /* Adjust width to better match */
+  max-width: 350px;
 }
 
 .header {
-  font-size: 24px; /* Slightly larger font size */
+  font-size: 24px;
   font-weight: bold;
-  color: #ffffff;
+  color: #333;
   margin-bottom: 10px;
 }
 
 .description {
   font-size: 14px;
-  color: #b0b0b0; /* Lighter grey for description text */
+  color: #666; /* Medium grey for description text */
   margin-bottom: 20px;
 }
 
 .input {
   width: 100%;
   padding: 10px;
-  border: 2px solid #333; 
+  border: 2px solid #ddd; /* Light border color */
   border-radius: 5px;
-  background-color: #121212;
-  color: #fff;
+  background-color: #f9f9f9; /* Very light grey background for input */
+  color: #333;
   text-align: center;
   font-size: 14px;
   margin-top: 10px;
 }
 
 .input::placeholder {
-  color: #757575;
+  color: #999; /* Slightly darker grey for placeholder text */
 }
 
 .footer {
@@ -85,16 +86,16 @@ body {
   bottom: 20px;
   width: 100%;
   text-align: center;
-  color: #aaaaaa;
+  color: #888;
 }
 
 .footer a {
-  color: #757575;
+  color: #666;
   text-decoration: none;
   margin: 0 10px;
 }
 
 .footer a:hover {
-  color: #fff;
+  color: #333;
   text-decoration: underline;
 }
