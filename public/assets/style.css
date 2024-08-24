@@ -5,111 +5,146 @@
 
 body {
   background-color: #1a1a1a;
-  background-image: url('https://github.com/alexbell-lol/Galaxy/blob/main/full-main.png?raw=true');
-  background-size: cover;
-  background-position: center;
-  color: #ffffff;
+  color: white;
   height: 100vh;
   width: 100vw;
   font-family: 'IBM Plex Sans', sans-serif;
+  background-image: radial-gradient(circle, #2b2b2b, #1a1a1a);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   overflow: hidden;
 }
 
-/* Navbar styles */
-.navbar {
-  overflow: hidden;
-  background-color: #111111;
-  position: fixed; 
-  top: 0; 
-  width: 100%; 
-  display: flex;
-  justify-content: flex-start; /* Align items to the start */
-  align-items: center;
-  padding: 10px 20px; /* Less padding for a compact look */
-}
-
-.navbar a {
-  color: #ffffff;
-  text-align: center;
-  padding: 0 10px; /* Reduced padding between links */
-  text-decoration: none;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-}
-
-.navbar a:hover {
-  background: #333333;
-  color: #ffffff;
-  transition: background-color 200ms, color 200ms;
-}
-
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  margin-right: 20px; /* Adjusted for spacing between logo and menu */
-}
-
-/* Container and search bar styles */
 .container {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  padding: 20px;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .header {
-  font-size: 64px;
+  font-size: 18px;
   font-weight: bold;
   color: #ffffff;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  height: 42px;
+  width: 42px;
 }
 
 .description {
   font-size: 14px;
-  color: #999999;
-  margin-bottom: 30px;
+  color: #ffffff;
 }
 
 .input {
-  width: 500px;
-  background-color: #333333;
-  border: none;
-  font-size: 18px;
-  padding: 15px;
+  width: 300px;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  font-size: 14px;
+  padding: 10px;
   text-align: center;
   color: #ffffff;
   outline: none;
-  border-radius: 10px;
+  border-radius: 50px;
+  transition: all 100ms ease-in-out;
 }
 
 .input::placeholder {
-  color: #999999;
+  color: #757575;
 }
 
-/* Footer styles */
+.input:disabled {
+  color: #757575;
+}
+
+.logo {
+  height: 55px;
+  width: 55px;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 24px #685dff);
+}
+
 .footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #111111;
+  box-sizing: border-box;
+  padding: 18px;
   color: #ffffff;
 }
 
-.footer a {
+.footer a,
+.footer a:visited {
+  cursor: pointer;
   color: #ffffff;
+  font-size: 16px;
   text-decoration: none;
+  text-underline-offset: 2.5px;
+  margin: 0 10px;
 }
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  backdrop-filter: blur(5px);
+  color: #ffffff;
+  padding: 10px 0;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+.navbar a:hover {
+  background: #333;
+  color: #ffffff;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: #ffffff;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 200ms ease-in-out;
+}
+
+.button:hover {
+  background-color: #ffffff;
+  color: #000000;
 }
