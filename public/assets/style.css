@@ -5,73 +5,100 @@
 }
 
 body {
-  background-color: #1a1a1a; /* Dark background */
-  font-family: 'IBM Plex Sans', sans-serif;
-  color: #ffffff; /* White text for contrast */
+  background-color: #1a1a1a; /* Background color to match the image */
+  color: white;
   height: 100vh;
   width: 100vw;
+  font-family: 'IBM Plex Sans', sans-serif;
+  background-image: radial-gradient(circle at top left, #2b2b2b, #1a1a1a);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  overflow: hidden;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-/* Navbar */
 .navbar {
   width: 100%;
-  background-color: #333; /* Dark navbar */
+  background-color: #000; /* Dark background to match image */
   padding: 15px 0;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
   justify-content: center;
-  gap: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
 
 .navbar a {
   padding: 10px 20px;
+  margin: 0 5px;
   text-decoration: none;
-  color: #fff; /* White text for buttons */
+  color: white;
   font-size: 16px;
-  background-color: #444; /* Dark button background */
-  border-radius: 25px; /* Rounded buttons */
-  transition: background-color 0.3s;
+  background-color: #111; /* Slightly lighter black for buttons */
+  border-radius: 10px; /* Rounded corners for navbar items */
 }
 
 .navbar a:hover {
-  background-color: #555; /* Hover effect */
+  background-color: #222; /* Slightly lighter on hover */
 }
 
-/* Centered Search Container */
 .container {
-  background-color: #333; /* Dark container background */
+  background-color: #111; /* Darker background for container */
   padding: 30px;
-  border-radius: 15px; /* Rounded corners */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow */
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for container */
   text-align: center;
-  max-width: 400px;
+  max-width: 300px;
 }
 
 .header {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: bold;
-  color: #fff; /* White text for header */
-  margin-bottom: 10px;
+  color: #ffffff;
+  margin-bottom: 15px;
 }
 
 .description {
   font-size: 14px;
-  color: #ccc; /* Light grey for description */
+  color: #aaaaaa; /* Lighter grey for description text */
   margin-bottom: 20px;
 }
 
 .input {
   width: 100%;
   padding: 10px;
-  border: 2px solid #555; /* Slightly lighter border */
-  background-color: transparent;
-  color: #fff; /* White text inside input */
-  border-radius: 5px; /* Rounded input box */
+  border: 2px solid #333; /* Border to match input style */
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.input::placeholder {
+  color: #757575; /* Placeholder color */
+}
+
+.footer {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: #aaaaaa; /* Lighter grey for footer */
+}
+
+.footer a {
+  color: #757575;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer a:hover {
+  color: #fff; /* White on hover */
+  text-decoration: underline;
 }
