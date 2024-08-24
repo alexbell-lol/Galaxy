@@ -5,12 +5,12 @@
 }
 
 body {
-  background-color: #1a1a1a; /* Background color to match the image */
-  color: white;
+  background-color: #f0f0f0; /* Light grey background color similar to the "Light" design */
+  color: #333; /* Dark text for contrast on a light background */
   height: 100vh;
   width: 100vw;
   font-family: 'IBM Plex Sans', sans-serif;
-  background-image: radial-gradient(circle at top left, #2b2b2b, #1a1a1a);
+  background-image: radial-gradient(circle at top left, #e6e6e6, #f0f0f0); /* Adjusted gradient for a light theme */
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -21,44 +21,42 @@ body {
   flex-direction: column;
 }
 
-/* Light-Themed Navbar */
 .navbar {
-  width: auto; /* Auto width to make the navbar smaller */
-  background-color: #ffffff; /* Light background color for the navbar */
-  padding: 10px 20px; /* Reduced padding for a smaller navbar */
+  width: auto;
+  background-color: #f0f0f0; /* Matching the light grey background of the body */
+  padding: 10px 20px;
   position: fixed;
-  top: 20px; /* Added space from the top */
-  left: 50%; /* Center horizontally */
-  transform: translateX(-50%); /* Centering adjustment */
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
-  border-radius: 20px; /* Rounded corners */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
-  transition: all 0.3s ease-in-out; /* Smooth transition for animations */
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out;
 }
 
 .navbar a {
-  padding: 10px 15px; /* Reduced padding for smaller buttons */
+  padding: 10px 15px;
   margin: 0 5px;
   text-decoration: none;
   color: #333; /* Dark text for contrast */
   font-size: 16px;
-  background-color: #f5f5f5; /* Slightly darker light grey for buttons */
-  border-radius: 10px; /* Rounded corners for navbar items */
-  transition: background-color 0.3s, transform 0.3s; /* Smooth hover and transform animations */
+  background-color: #ffffff; /* White background for buttons */
+  border-radius: 10px;
+  transition: background-color 0.3s, transform 0.3s;
 }
 
 .navbar a:hover {
-  background-color: #e0e0e0; /* Slightly darker grey on hover */
-  transform: scale(1.1); /* Smooth scaling animation on hover */
+  background-color: #e0e0e0; /* Light grey on hover */
+  transform: scale(1.1);
 }
 
-/* Main Container */
 .container {
-  background-color: #111; /* Darker background for container */
+  background-color: #ffffff; /* White background for the container */
   padding: 30px;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Lighter shadow for light theme */
   text-align: center;
   max-width: 300px;
 }
@@ -66,30 +64,30 @@ body {
 .header {
   font-size: 22px;
   font-weight: bold;
-  color: #ffffff;
+  color: #333; /* Dark text */
   margin-bottom: 15px;
 }
 
 .description {
   font-size: 14px;
-  color: #aaaaaa; /* Lighter grey for description text */
+  color: #666; /* Medium grey for description text */
   margin-bottom: 20px;
 }
 
 .input {
   width: 100%;
   padding: 10px;
-  border: 2px solid #333; /* Border to match input style */
+  border: 2px solid #ccc; /* Light grey border for input */
   border-radius: 5px;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #333;
   text-align: center;
   font-size: 14px;
   margin-top: 10px;
 }
 
 .input::placeholder {
-  color: #757575; /* Placeholder color */
+  color: #999; /* Grey placeholder color */
 }
 
 .footer {
@@ -97,16 +95,16 @@ body {
   bottom: 20px;
   width: 100%;
   text-align: center;
-  color: #aaaaaa; /* Lighter grey for footer */
+  color: #666; /* Medium grey for footer */
 }
 
 .footer a {
-  color: #757575;
+  color: #999;
   text-decoration: none;
   margin: 0 10px;
 }
 
 .footer a:hover {
-  color: #fff; /* White on hover */
+  color: #333; /* Dark grey on hover */
   text-decoration: underline;
 }
