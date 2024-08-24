@@ -5,97 +5,73 @@
 }
 
 body {
-  background-color: #f5f5f5; /* Light background color */
-  color: #333;
+  background-color: #1a1a1a; /* Dark background */
   font-family: 'IBM Plex Sans', sans-serif;
+  color: #ffffff; /* White text for contrast */
   height: 100vh;
   width: 100vw;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
 }
 
+/* Navbar */
 .navbar {
   width: 100%;
-  background-color: #ffffff; /* Light navbar background */
+  background-color: #333; /* Dark navbar */
   padding: 15px 0;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
   justify-content: center;
-  gap: 10px; /* Add spacing between navbar items */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for navbar */
+  gap: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
 }
 
 .navbar a {
   padding: 10px 20px;
   text-decoration: none;
-  color: #333; /* Dark text color for contrast */
+  color: #fff; /* White text for buttons */
   font-size: 16px;
-  background-color: #eaeaea; /* Light button background */
-  border-radius: 10px;
+  background-color: #444; /* Dark button background */
+  border-radius: 25px; /* Rounded buttons */
   transition: background-color 0.3s;
 }
 
 .navbar a:hover {
-  background-color: #d8d8d8; /* Slightly darker hover effect */
+  background-color: #555; /* Hover effect */
 }
 
+/* Centered Search Container */
 .container {
-  background-color: #ffffff; /* White container background */
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); /* Light shadow */
+  background-color: #333; /* Dark container background */
+  padding: 30px;
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Soft shadow */
   text-align: center;
-  max-width: 350px;
+  max-width: 400px;
 }
 
 .header {
   font-size: 24px;
   font-weight: bold;
-  color: #333;
+  color: #fff; /* White text for header */
   margin-bottom: 10px;
 }
 
 .description {
   font-size: 14px;
-  color: #666; /* Medium grey for description text */
+  color: #ccc; /* Light grey for description */
   margin-bottom: 20px;
 }
 
 .input {
   width: 100%;
   padding: 10px;
-  border: 2px solid #ddd; /* Light border color */
-  border-radius: 5px;
-  background-color: #f9f9f9; /* Very light grey background for input */
-  color: #333;
-  text-align: center;
-  font-size: 14px;
-  margin-top: 10px;
-}
-
-.input::placeholder {
-  color: #999; /* Slightly darker grey for placeholder text */
-}
-
-.footer {
-  position: fixed;
-  bottom: 20px;
-  width: 100%;
-  text-align: center;
-  color: #888;
-}
-
-.footer a {
-  color: #666;
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-.footer a:hover {
-  color: #333;
-  text-decoration: underline;
+  border: 2px solid #555; /* Slightly lighter border */
+  background-color: transparent;
+  color: #fff; /* White text inside input */
+  border-radius: 5px; /* Rounded input box */
 }
