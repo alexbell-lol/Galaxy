@@ -5,75 +5,71 @@
 }
 
 body {
-  background-color: #1a1a1a; /* Background color to match the image */
+  background-color: #121212; /* Adjusted to a darker background */
   color: white;
+  font-family: 'IBM Plex Sans', sans-serif;
   height: 100vh;
   width: 100vw;
-  font-family: 'IBM Plex Sans', sans-serif;
-  background-image: radial-gradient(circle at top left, #2b2b2b, #1a1a1a);
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  overflow: hidden;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   flex-direction: column;
 }
 
 .navbar {
   width: 100%;
-  background-color: #000; /* Dark background to match image */
+  background-color: #000;
   padding: 15px 0;
   position: fixed;
   top: 0;
   left: 0;
   display: flex;
   justify-content: center;
+  gap: 10px; /* Add spacing between navbar items */
 }
 
 .navbar a {
   padding: 10px 20px;
-  margin: 0 5px;
   text-decoration: none;
   color: white;
   font-size: 16px;
-  background-color: #111; /* Slightly lighter black for buttons */
-  border-radius: 10px; /* Rounded corners for navbar items */
+  background-color: #111;
+  border-radius: 10px;
+  transition: background-color 0.3s;
 }
 
 .navbar a:hover {
-  background-color: #222; /* Slightly lighter on hover */
+  background-color: #222;
 }
 
 .container {
-  background-color: #111; /* Darker background for container */
-  padding: 30px;
+  background-color: #1c1c1c; /* Darker container background to match the new image */
+  padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
   text-align: center;
-  max-width: 300px;
+  max-width: 350px; /* Adjust width to better match */
 }
 
 .header {
-  font-size: 22px;
+  font-size: 24px; /* Slightly larger font size */
   font-weight: bold;
   color: #ffffff;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .description {
   font-size: 14px;
-  color: #aaaaaa; /* Lighter grey for description text */
+  color: #b0b0b0; /* Lighter grey for description text */
   margin-bottom: 20px;
 }
 
 .input {
   width: 100%;
   padding: 10px;
-  border: 2px solid #333; /* Border to match input style */
+  border: 2px solid #333; 
   border-radius: 5px;
-  background-color: #000;
+  background-color: #121212;
   color: #fff;
   text-align: center;
   font-size: 14px;
@@ -81,7 +77,7 @@ body {
 }
 
 .input::placeholder {
-  color: #757575; /* Placeholder color */
+  color: #757575;
 }
 
 .footer {
@@ -89,7 +85,7 @@ body {
   bottom: 20px;
   width: 100%;
   text-align: center;
-  color: #aaaaaa; /* Lighter grey for footer */
+  color: #aaaaaa;
 }
 
 .footer a {
@@ -99,6 +95,6 @@ body {
 }
 
 .footer a:hover {
-  color: #fff; /* White on hover */
+  color: #fff;
   text-decoration: underline;
 }
